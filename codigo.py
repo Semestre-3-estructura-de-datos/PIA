@@ -2,9 +2,8 @@ import datetime
 import sys
 import sqlite3
 from sqlite3 import Error
-
-
-
+from funciones import insertardatos
+from funciones import validacion
 
 menu=1
 separador=("*"*30)

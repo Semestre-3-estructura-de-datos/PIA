@@ -1,3 +1,10 @@
+import datetime
+import sys
+import sqlite3
+from sqlite3 import Error
+
+
+
 def insertardatos(clave,descripcion,cantidad,precio,tiempo):
     try:
         with sqlite3.connect("Ventas.db") as conn:

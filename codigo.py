@@ -24,8 +24,20 @@ try:
                 
                 clave=int(input("Dime la clave : "))
                 descripcion=input("Dime la descripcion del articulo : ")
+
                 cantidad=int(input("Dime la cantidad de piezas vendidas : "))
+                while cantidad<0:
+                        print("-"*15)
+                        print("Solo se admiten numeros positivos ")
+                        cantidad=int(input("Dime la cantidad de piezas vendidas  : "))
+                print("-"*15)
+
                 precio=float(input("Dime el precio de venta unitario : "))
+                while precio<0:
+                     print("-"*15)
+                     print("Solo se admiten numeros positivos ")
+                     precio=float(input("Dime el precio de venta unitario : "))
+                print("-"*15)
                 
                 
                 ahora = datetime.datetime.now()
